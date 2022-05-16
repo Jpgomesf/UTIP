@@ -1,0 +1,49 @@
+.card {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardTop {
+    display: flex;
+    gap: 5px;
+}
+
+.cardTop svg {
+    opacity: 0;
+    transition: 200ms;
+}
+
+.cardTopLabels {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.card:hover .cardTop svg {
+    opacity: 1;
+}
+
+.cardTitle {
+    font-weight: bold;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardFooter p {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cardFooter svg {
+    height: 16px;
+    width: 16px;
+}
