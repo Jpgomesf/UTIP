@@ -1,6 +1,10 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { AuthProvider } from '../context/auth'
+import { AuthContext } from '../context/auth'
+import { useContext } from 'react'
+
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -11,7 +15,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function App() {
+const Navbar = () => {
+  
+  const {logout} = useContext(AuthContext); 
+  
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -115,6 +122,7 @@ export default function App() {
                         {({ active }) => (
                           <a
                             href="#"
+                            onClick={ logout }
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Sign out
@@ -151,3 +159,5 @@ export default function App() {
     </Disclosure>
   )
 };
+
+export default Navbar;

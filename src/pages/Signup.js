@@ -70,7 +70,7 @@ export default function LogIn() {
                                         className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                         </div>
                         <div className="mt-4 ml-6">
-                            <label className="block" for="email">Password</label>
+                            <label className="block" Htmlfor="email">Password</label>
                             <input id="password"
                                         name="password"
                                         type="password"
@@ -109,7 +109,7 @@ export default function LogIn() {
                         </div>
                     </div>
                         <div className="flex items-center justify-between ml-6">
-                            <Link to='/'><button href="/" className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Sign Up</button></Link>
+                            <Link to="/dashboard"><button href="/dashboard" className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Sign Up</button></Link>
                         </div>
                   </form>
               
