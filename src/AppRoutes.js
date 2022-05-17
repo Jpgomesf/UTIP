@@ -6,6 +6,7 @@ import LogIn from './pages/LogIn';
 import Home from './pages/Home';
 import Oops from './pages/Oops';
 import Signup from './pages/Signup';
+import EditProfile from './pages/Editprofile';
 
 import { AuthProvider, AuthContext } from './context/auth';
 
@@ -27,6 +28,7 @@ const AppRoutes = () => {
                     <Route path="/login" element={<LogIn />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/dashboard" element={<Private><Home /></Private>} />
+                    <Route path="/editprofile" element={<EditProfile />} />
                     <Route path="*" element={<Navigate to={"/login"}><Oops /></Navigate>} />      
                 </Routes>
             </AuthProvider>

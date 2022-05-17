@@ -4,6 +4,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { AuthContext } from '../../context/auth'
 import { AuthProvider } from '../../context/auth'
 import { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const navigation = [
@@ -11,11 +12,21 @@ const navigation = [
   { name: 'Projetos', href: '#', current: false },
 ]
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  
+  const userProfile = () => {
+    console.log("userProfile");
+    navigate("/editprofile"); 
+  };
+
+
   
   const {logout} = useContext(AuthContext); 
   
@@ -94,7 +105,8 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href=""
+                            onClick={ userProfile }
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Your Profile
@@ -104,7 +116,7 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href=""
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Settings
@@ -118,7 +130,7 @@ const Navbar = () => {
                             onClick={ logout }
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Sign out
+                            Logout
                           </a>
                         )}
                       </Menu.Item>
