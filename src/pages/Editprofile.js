@@ -8,10 +8,10 @@ const EditProfile = () => {
            
             <div className="px-8 py-6 mt-4 w-9/12 min-w-max  text-left bg-white shadow-lg">
                 
-                <h3 className="text-2xl font-bold text-center"> Meu Usuário </h3>
+                <h3 className="text-4xl font-bold text-center"> Meu Usuário </h3>
                 <form action="">
                 
-                <div className="text-sm rounded-full mt-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                <div className="text-sm rounded-full mt-12 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <img
                         className="h-8 w-8 rounded-full m-auto"
                         style = {{ width: 150, height: 150 }}
