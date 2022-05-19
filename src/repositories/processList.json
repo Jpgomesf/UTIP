@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "assigneeType": "prisao-flagrante-delito",
+      "processNumber": 11406789,
+      "status": 26
+    },
+    {
+      "id": 2,
+      "assigneeType": "inquerito-policial",
+      "processNumber": 11406740,
+      "status": 5
+    },
+    {
+      "id": 3,
+      "assigneeType": "denuncia",
+      "processNumber": 11406790,
+      "status": 10
+    },
+    {
+      "id": 4,
+      "assigneeType": "defesa-previa",
+      "processNumber": 11406100,
+      "status": 30
+    },
+    {
+      "id": 5,
+      "assigneeType": "audiencia-instituicao-julgamento",
+      "processNumber": 11406768,
+      "status": 10
+    },
+    {
+      "id": 6,
+      "assigneeType": "sentenca",
+      "processNumber": 11406700,
+      "status": 1
+    }
+  ]
+  

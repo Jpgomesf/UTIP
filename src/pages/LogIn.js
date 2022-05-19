@@ -19,7 +19,7 @@ const LogIn = () => {
         
           <div className="px-8 py-6 mt-4 w-3/12 min-w-max text-left bg-white shadow-lg">
                 <div className="flex justify-center">
-                    <img src='/utip-logo.png' className='w-60 h-30' alt=''/>
+                    <img src='/utip-logo.png' className='w-40 h-40' alt=''/>
                 </div>
                 <h3 className="text-2xl font-bold text-center">Login to your account</h3>
                 <form className="form" onSubmit={handleSubmit}>
