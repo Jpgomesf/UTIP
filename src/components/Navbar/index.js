@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: false },
-  { name: 'Projetos', href: '#', current: false },
+  { name: 'Incluir Processo', href: '#', current: false },
 ]
 
 

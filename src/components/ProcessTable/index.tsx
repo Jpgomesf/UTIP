@@ -95,11 +95,7 @@ export  function ProcessTable({ processes }: IProcess) {
 
     //mudaremos tudo a respeito das próximas linhas
     return (
-        <div className={styles.container}>
-          <div>
-            <button onClick={() => {}}>Incluir processo</button>
-          </div>
-    
+        <div className={styles.container}>  
           <div className={styles.title}>
             <h2>UTiP</h2>
             <span>Lei de Tóxicos 11.343/06</span>
