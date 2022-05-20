@@ -54,10 +54,24 @@ export  function ProcessTable({ processes }: IProcess) {
                   
 
             case assigneeTypes[1].value:  
-                return status < 5 ? 'ok' : status > 5 ? 'critical' : 'warning';
+                //return status < 5 ? 'ok' : status > 5 ? 'critical' : 'warning';
+                if(status <= 3 ) {
+                  return 'ok' 
+                } else if (status <= 5) {
+                  return 'warning'
+                } else {
+                  return 'critical'
+                }
             case assigneeTypes[2].value:            
             case assigneeTypes[4].value:
-                return status < 10 ? 'ok' : status > 10 ? 'critical' : 'warning';            
+                //return status < 10 ? 'ok' : status > 10 ? 'critical' : 'warning';
+                if(status <= 7 ) {
+                  return 'ok' 
+                } else if (status <= 10) {
+                  return 'warning'
+                } else {
+                  return 'critical'
+                }            
                 
         }
     }
