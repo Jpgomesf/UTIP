@@ -3,7 +3,7 @@ import { useState, useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import LogIn from './pages/LogIn';
-import Home from './pages/Home.tsx';
+import Home from './pages/Home/Home.tsx';
 import Oops from './pages/Oops';
 import Signup from './pages/Signup';
 import EditProfile from './pages/Editprofile';

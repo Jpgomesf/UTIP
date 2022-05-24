@@ -42,7 +42,6 @@ export  function ProcessTable({ processes }: IProcess) {
         switch (assigneeType) {
             case assigneeTypes[0].value:
             case assigneeTypes[3].value:
-                // Precisamos melhorar essas condições 
                 //return status < 30 ? 'ok' : status > 30 ? 'critical' : 'warning';
                 if(status <= 25 ) {
                   return 'ok' 
@@ -80,7 +79,7 @@ export  function ProcessTable({ processes }: IProcess) {
     function processBox({ id, assigneeType, processNumber, status }: Process){
         return (
             <div key={id} className={styles.processContainer}>
-                <span>Número: {processNumber}</span>
+                <span>N° {processNumber}</span>
                 <span
                   className={
                     styles[processStatus({ id, assigneeType, processNumber, status })]
@@ -93,27 +92,29 @@ export  function ProcessTable({ processes }: IProcess) {
         )
     }
 
-    //mudaremos tudo a respeito das próximas linhas
+    //hr=linha no browser
     return (
-        <div className={styles.container}>  
-          <div className={styles.title}>
-            <h2>UTiP</h2>
-            <span>Lei de Tóxicos 11.343/06</span>
-          </div>
-    
-          <div className={styles.processPerTypeContainer}>
-            {assigneeTypes.map(({ name, value }) => {
-              return (
-                <div key={value} className={styles.processPerType}>
-                  <h3>{name}</h3>
-    
-                  {processes.map((process) => {
-                    return process.assigneeType == value && processBox(process);
-                  })}
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <div >  
+          
+          <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
+          
+          <hr />
+          
+          
+            <div className={styles.processPerTypeContainer}>
+              {assigneeTypes.map(({ name, value }) => {
+                return (
+                  <div key={value} className={styles.processPerType}>
+                    <h3>{name}</h3>
+      
+                    {processes.map((process) => {
+                      return process.assigneeType == value && processBox(process);
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+                     
+        </div>  
       );
 }
