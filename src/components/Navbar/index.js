@@ -56,7 +56,7 @@ const Navbar = () => {
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    src='/logo.svg'
                     alt="Workflow"
                   />
                 </div>
