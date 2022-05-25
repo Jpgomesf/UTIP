@@ -20,7 +20,6 @@ const Home = () => {
 
       <div className={styles.contentContainer}>
           <ProcessTable processes={processes} />
-        
         </div>
       </main>
     </>
