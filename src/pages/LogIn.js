@@ -17,7 +17,7 @@ const LogIn = () => {
       
       <div  className="flex items-center  justify-center min-h-screen bg-[url('images/justice.jpg')]">
         
-          <div className="px-8 py-6 mt-4 w-3/14 min-w-max text-left bg-white shadow-lg">
+          <div className="px-10 py-11 mt-4 w-auto min-w-max text-left bg-white shadow-2xl">
                 <div className="flex justify-center">
                     <img src='/logobk.svg' className='w-auto h-10 mb-10' alt=''/>
                 </div>
