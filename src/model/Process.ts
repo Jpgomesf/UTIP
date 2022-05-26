@@ -1,6 +1,6 @@
 export type Process = {
     id: number;
-    processNumber: number;
+    processNumber: string;
     assigneeType: string;
     status: number;
   };

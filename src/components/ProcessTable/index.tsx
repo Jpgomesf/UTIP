@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Process } from "../../model/Process";
 import   styles  from './styles.module.scss';
 
@@ -31,6 +32,10 @@ export  function ProcessTable({ processes }: IProcess) {
         {
             name: 'Audiência / Julgamento',
             value: 'audiencia-instituicao-julgamento',
+        },
+        {
+          name: 'Sentença',
+          value: 'sentenca',
         }
     ];
 
@@ -70,7 +75,11 @@ export  function ProcessTable({ processes }: IProcess) {
                   return 'warning'
                 } else {
                   return 'critical'
-                }            
+                }
+            case assigneeTypes[5].value:  
+              /*if(status < 0){
+                return 'brown'
+              } */           
                 
         }
     }
@@ -92,14 +101,26 @@ export  function ProcessTable({ processes }: IProcess) {
         )
     }
 
-    //hr=linha no browser
+    //const [searchNumber, setSearchNumber] = useState('')
+
+
     return (
         <div >  
           
-          <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
           
+            <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
+
+                   
           <hr />
-          
+            
+            
+            {/*
+              <input 
+              type="text" 
+              placeholder="Search"
+              onChange={event => {setSearchNumber(event.target.value)}}
+              />
+            */}
           
             <div className={styles.processPerTypeContainer}>
               {assigneeTypes.map(({ name, value }) => {
