@@ -109,7 +109,8 @@
   
   .ok,
   .warning,
-  .critical {
+  .critical,
+  .finished {
     height: 10px;
     margin-top: 1px;
     padding: 0.5rem;
@@ -118,7 +119,8 @@
   }
   
   .ok,
-  .critical {
+  .critical,
+  .finished {
     color: white;
   }
   
@@ -132,6 +134,10 @@
   
   .critical {
     background-color: rgb(216, 0, 0);
+  }
+
+  .finished {
+    background-color: black;
   }
 
   //Lei de tóxicos

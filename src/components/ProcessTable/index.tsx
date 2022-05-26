@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Process } from "../../model/Process";
 import   styles  from './styles.module.scss';
 
@@ -77,14 +77,11 @@ export  function ProcessTable({ processes }: IProcess) {
                   return 'critical'
                 }
             case assigneeTypes[5].value:  
-              /*if(status < 0){
-                return 'brown'
-              } */           
-                
+              return 'finished'    
         }
     }
 
-    //função box 
+    //função box adicionar propriedade onclick pra abrir o modal
     function processBox({ id, assigneeType, processNumber, status }: Process){
         return (
             <div key={id} className={styles.processContainer}>
@@ -94,41 +91,88 @@ export  function ProcessTable({ processes }: IProcess) {
                     styles[processStatus({ id, assigneeType, processNumber, status })]
                   }
                 >
-                  Status: {status} dia
-                  {status > 1 ? 's' : ''}
+                  {
+                    assigneeType != 'sentenca' && 
+                    <span>Status: {status} dia
+                    {status > 1 ? 's' : ''}
+                    </span>
+                  }
+                  {
+                    assigneeType == 'sentenca' && 
+                    <span>
+                      concluído
+                    </span>
+                  }
                 </span>
             </div>
         )
     }
+    
+    const [searchNumber, setSearchNumber] = useState('')
 
-    //const [searchNumber, setSearchNumber] = useState('')
+    const [promusNumber, setPromusNumber] = useState([])
+    
+
+    useEffect(() => {
+      
+        setPromusNumber(processes);
+        console.log("tovivo")
+      
+        // filterBySearchNumber(searchNumber)
+      
+      
+    }, [processes]);
+    
+    useEffect(() => {
+      filterBySearchNumber(searchNumber)
+
+      
+    }, [searchNumber] );
 
 
-    return (
+    
+    //console.log(processes)
+    console.log(promusNumber)
+   
+    function filterBySearchNumber(number) {
+    
+      if(number == ""){
+        setPromusNumber(processes)
+      }else {
+        setPromusNumber (processes.filter(process => process.processNumber.toString().startsWith(number))) 
+      }
+      }
+      
+      return (
         <div >  
           
           
             <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
 
-                   
+                    
           <hr />
             
             
-            {/*
+            
               <input 
               type="text" 
               placeholder="Search"
-              onChange={event => {setSearchNumber(event.target.value)}}
+              onChange={event => {setSearchNumber(event.target.value)
+               
+              }}
               />
-            */}
+              
+              
+              
+            
           
             <div className={styles.processPerTypeContainer}>
               {assigneeTypes.map(({ name, value }) => {
                 return (
                   <div key={value} className={styles.processPerType}>
                     <h3>{name}</h3>
-      
-                    {processes.map((process) => {
+                    
+                    {promusNumber.map((process) => {
                       return process.assigneeType == value && processBox(process);
                     })}
                   </div>
@@ -137,5 +181,6 @@ export  function ProcessTable({ processes }: IProcess) {
             </div>
                      
         </div>  
+        
       );
 }
