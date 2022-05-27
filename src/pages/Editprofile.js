@@ -21,7 +21,7 @@ const EditProfile = () => {
                     </div> 
 
                     <div className="flex items-center justify-center">                        
-                            <Link to="/dashboard"><button href="/dashboard" className="m-auto px-4 py-1 mt-4 text-white bg-gray-600 rounded-lg hover:bg-gray-900">Alterar Foto</button></Link>
+                            <Link to=""><button href="/dashboard" className="m-auto px-4 py-1 mt-4 text-white bg-gray-600 rounded-lg hover:bg-gray-900">Alterar Foto</button></Link>
                         </div>                
                 <div className="mt-4 ml-6">
                      <label className="block" htmlFor="email">Novo Email</label>
@@ -63,6 +63,7 @@ const EditProfile = () => {
                 </div>    
 
                 <div className="flex items-center justify-end ml-6">
+                            <Link to="/dashboard"><button href="/dashboard" className="px-6 py-2 mt-4 mx-4 text-white bg-gray-500 rounded-lg hover:bg-gray-400">Cancelar</button></Link>
                             <Link to="/dashboard"><button href="/dashboard" className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Salvar</button></Link>
                         </div>
 
