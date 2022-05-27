@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const IncludeProcess = () => {
      return (
-        <div className="flex items-center  justify-center min-h-screen bg-[url('images/themis.jpg')]">
+      <div  className="flex items-center  justify-center min-h-screen bg-[url('images/justice.jpg')]">
 
             <div className="px-8 py-6 mt-4 w-9/12 min-w-max  text-left bg-white shadow-lg">
                 
@@ -14,7 +14,7 @@ const IncludeProcess = () => {
 
                 <div className="mt-4 grid grid-cols-2 ">
                  <div className="mt-4 ml-6">
-                    
+
                      <label className="block" htmlFor="text">Texto Processo</label>
                         <input id="text-process"
                                   name="text"
