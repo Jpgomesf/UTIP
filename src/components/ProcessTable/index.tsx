@@ -14,12 +14,8 @@ type AssignessTypes = {
 export  function ProcessTable({ processes }: IProcess) {
     const assigneeTypes: AssignessTypes[] = [
         {
-            name: 'Flagrante / Delito',
-            value: 'prisao-flagrante-delito',
-        },
-        {
-            name: 'Inquérito Policial',
-            value: 'inquerito-policial',
+            name: 'Flagrante / Inquérito',
+            value: 'flagrante-delito-inquerito-policial',
         },
         {
             name: 'Denúncia',
@@ -30,8 +26,12 @@ export  function ProcessTable({ processes }: IProcess) {
             value: 'defesa-previa',
         },
         {
-            name: 'Audiência / Julgamento',
+            name: 'AIJ',
             value: 'audiencia-instituicao-julgamento',
+        },
+        {
+          name: 'Prolatação de Julgamento',
+          value: 'prolatar-julgamento',
         },
         {
           name: 'Sentença',
@@ -46,19 +46,25 @@ export  function ProcessTable({ processes }: IProcess) {
     function processStatus({ assigneeType, status }: Process) {
         switch (assigneeType) {
             case assigneeTypes[0].value:
-            case assigneeTypes[3].value:
-                //return status < 30 ? 'ok' : status > 30 ? 'critical' : 'warning';
-                if(status <= 25 ) {
-                  return 'ok' 
-                } else if (status <= 30) {
-                  return 'warning'
-                } else {
-                  return 'critical'
-                }
-                  
-
+              if(status <= 30 ) {
+                return 'ok' 
+              } else if (status <= 45) {
+                return 'warning'
+              } else {
+                return 'critical'
+              }
+               
             case assigneeTypes[1].value:  
-                //return status < 5 ? 'ok' : status > 5 ? 'critical' : 'warning';
+              //return status < 5 ? 'ok' : status > 5 ? 'critical' : 'warning';
+              if(status <= 7 ) {
+                return 'ok' 
+              } else if (status <= 10) {
+                return 'warning'
+              } else {
+                return 'critical'
+              }            
+            case assigneeTypes[2].value: // alterar essa config pra 10dias 
+                //return status < 30 ? 'ok' : status > 30 ? 'critical' : 'warning';
                 if(status <= 3 ) {
                   return 'ok' 
                 } else if (status <= 5) {
@@ -66,16 +72,24 @@ export  function ProcessTable({ processes }: IProcess) {
                 } else {
                   return 'critical'
                 }
-            case assigneeTypes[2].value:            
-            case assigneeTypes[4].value:
+                  
+            case assigneeTypes[3].value:
                 //return status < 10 ? 'ok' : status > 10 ? 'critical' : 'warning';
+                if(status <= 25 ) {
+                  return 'ok' 
+                } else if (status <= 30) {
+                  return 'warning'
+                } else {
+                  return 'critical'
+                }
+            case assigneeTypes[4].value:  
                 if(status <= 7 ) {
                   return 'ok' 
                 } else if (status <= 10) {
                   return 'warning'
                 } else {
                   return 'critical'
-                }
+                }    
             case assigneeTypes[5].value:  
               return 'finished'    
         }

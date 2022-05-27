@@ -1,13 +1,13 @@
 [
     {
       "id": 1,
-      "assigneeType": "prisao-flagrante-delito",
+      "assigneeType": "flagrante-delito-inquerito-policial",
       "processNumber": 11406789,
-      "status": 26
+      "status": 46
     },
     {
       "id": 2,
-      "assigneeType": "inquerito-policial",
+      "assigneeType": "defesa-previa",
       "processNumber": 11406740,
       "status": 3
     },
@@ -21,13 +21,13 @@
       "id": 4,
       "assigneeType": "defesa-previa",
       "processNumber": 11406100,
-      "status": 24
+      "status": 5
     },
     {
       "id": 5,
       "assigneeType": "audiencia-instituicao-julgamento",
       "processNumber": 11406768,
-      "status": 4
+      "status": 6
     },
     {
       "id": 6,
@@ -37,12 +37,18 @@
     },
     {
       "id": 7,
-      "assigneeType": "inquerito-policial",
+      "assigneeType": "flagrante-delito-inquerito-policial",
       "processNumber": 11406740,
       "status": 6
     },
     {
       "id": 8,
+      "assigneeType": "prolatar-julgamento",
+      "processNumber": 11406740,
+      "status": 11
+    },
+    {
+      "id": 9,
       "assigneeType": "audiencia-instituicao-julgamento",
       "processNumber": 11406740,
       "status": 8
