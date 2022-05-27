@@ -96,12 +96,14 @@ export  function ProcessTable({ processes }: IProcess) {
         }
     }
 
-    // const [openModal, setOpenModal] = useState(false)
 
-    //função box adicionar propriedade onclick pra abrir o modal
+
+    //const [show, setShow] = useState(false);
+    
     function processBox({ id, assigneeType, processNumber, status }: Process){
         return (
-            <div key={id} className={styles.processContainer} /*onClick={() => setOpenModal(true)}*/ >
+            <div key={id} className={styles.processContainer} >
+                
                 <span>N° {processNumber}</span>
                 <span
                   className={

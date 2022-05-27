@@ -1,7 +1,11 @@
 import React from "react"
 import styles from './styles.modules.scss'
 
+
+
 function Modal () {
+         
+
     return (
         <div className={styles.modalBg}>
             <div className={styles.modalContainer}>

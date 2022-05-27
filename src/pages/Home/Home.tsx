@@ -6,7 +6,7 @@ import { Process } from '../../model/Process';
 import processess from '../../repositories/processList.json';
 import styles from './styles.module.scss';
 
-const Home = () => {
+function Home ()  {
   const [processes, setProcesses] = useState<Process[]>([]);
   useEffect(() => {
     setProcesses(processess);
@@ -16,11 +16,11 @@ const Home = () => {
     <>
 
       <main className={styles.pageContainer}>
-      <Navbar />
-
-      <div className={styles.contentContainer}>
-          <ProcessTable processes={processes} />
-        </div>
+        <Navbar />
+        <div className={styles.contentContainer}>
+            <ProcessTable processes={processes} />
+          </div>
+        
       </main>
     </>
   )
