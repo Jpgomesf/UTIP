@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Process } from "../../model/Process";
+import Modal from "../Modal/modal";
 import   styles  from './styles.module.scss';
 
 interface IProcess {
@@ -95,10 +96,12 @@ export  function ProcessTable({ processes }: IProcess) {
         }
     }
 
+    // const [openModal, setOpenModal] = useState(false)
+
     //função box adicionar propriedade onclick pra abrir o modal
     function processBox({ id, assigneeType, processNumber, status }: Process){
         return (
-            <div key={id} className={styles.processContainer}>
+            <div key={id} className={styles.processContainer} /*onClick={() => setOpenModal(true)}*/ >
                 <span>N° {processNumber}</span>
                 <span
                   className={
@@ -130,7 +133,7 @@ export  function ProcessTable({ processes }: IProcess) {
     useEffect(() => {
       
         setPromusNumber(processes);
-        console.log("tovivo")
+        //console.log("tovivo")
       
         // filterBySearchNumber(searchNumber)
       
@@ -146,7 +149,7 @@ export  function ProcessTable({ processes }: IProcess) {
 
     
     //console.log(processes)
-    console.log(promusNumber)
+    //console.log(promusNumber)
    
     function filterBySearchNumber(number) {
     
@@ -158,8 +161,8 @@ export  function ProcessTable({ processes }: IProcess) {
       }
       
       return (
-        <div >  
-          
+        <div > 
+
           
             <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
 
