@@ -98,11 +98,11 @@ export  function ProcessTable({ processes }: IProcess) {
 
 
 
-    //const [show, setShow] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     
     function processBox({ id, assigneeType, processNumber, status }: Process){
         return (
-            <div key={id} className={styles.processContainer} >
+            <div key={id} className={styles.processContainer} onClick={() => setIsOpen(true)}>
                 
                 <span>N° {processNumber}</span>
                 <span
@@ -167,7 +167,9 @@ export  function ProcessTable({ processes }: IProcess) {
 
           
             <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
+            <Modal open={isOpen} onClose={() => setIsOpen(false)}>
 
+            </Modal>
                     
           <hr />
             
