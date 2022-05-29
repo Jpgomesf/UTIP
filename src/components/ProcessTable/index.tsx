@@ -175,7 +175,7 @@ export  function ProcessTable({ processes }: IProcess) {
             
             
             
-              <input 
+              <input className={styles.searchBox}
               type="text" 
               placeholder="Search"
               onChange={event => {setSearchNumber(event.target.value)
