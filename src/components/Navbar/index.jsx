@@ -8,7 +8,8 @@ import { useNavigate } from 'react-router-dom'
 
 
 const navigation = [
-  { name: 'Inicio', href: '#', current: false },
+  { name: 'Inicio', href: '/dashboard', current: false },
+  { name: 'Processos', href: '#', current: false },
   { name: 'Incluir Processo', href: '/includeprocess', current: false },
 ]
 

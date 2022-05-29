@@ -165,10 +165,10 @@ export  function ProcessTable({ processes }: IProcess) {
       return (
         <div > 
 
-          
+            
             <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
             <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-
+              
             </Modal>
                     
           <hr />
