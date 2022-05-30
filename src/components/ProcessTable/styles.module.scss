@@ -141,13 +141,21 @@
 
   }
 
-.searchBox {
+  .searchBox {
+  
+  position: absolute;
+  top: 8rem;
+  left: 76%;
+  
+ 
+  
   background: #eee;
   margin-top: 1px;
   padding:4px;
   border-radius:5px ;
+  right: 2rem;
   
   border:0 none;
-  width:160px;
+  width:  16.8rem;
   font-size: 17px;  
 }

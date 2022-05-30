@@ -167,26 +167,20 @@ export  function ProcessTable({ processes }: IProcess) {
 
             
             <h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1>
+               
+              <input className={styles.searchBox}
+              type="text" 
+              placeholder="Search"
+              onChange={event => {setSearchNumber(event.target.value)
+              }}
+              />
+
             <Modal open={isOpen} onClose={() => setIsOpen(false)}>
               
             </Modal>
                     
           <hr />
-            
-            
-            
-              <input className={styles.searchBox}
-              type="text" 
-              placeholder="Search"
-              onChange={event => {setSearchNumber(event.target.value)
-               
-              }}
-              />
-              
-              
-              
-            
-          
+        
             <div className={styles.processPerTypeContainer}>
               {assigneeTypes.map(({ name, value }) => {
                 return (
