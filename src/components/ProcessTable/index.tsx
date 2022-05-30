@@ -31,10 +31,6 @@ export  function ProcessTable({ processes }: IProcess) {
             value: 'audiencia-instituicao-julgamento',
         },
         {
-          name: 'Prolatação de Julgamento',
-          value: 'prolatar-julgamento',
-        },
-        {
           name: 'Sentença',
           value: 'sentenca',
         }
@@ -82,17 +78,9 @@ export  function ProcessTable({ processes }: IProcess) {
                   return 'warning'
                 } else {
                   return 'critical'
-                }
-            case assigneeTypes[4].value:  
-                if(status <= 7 ) {
-                  return 'ok' 
-                } else if (status <= 10) {
-                  return 'warning'
-                } else {
-                  return 'critical'
                 }    
-            case assigneeTypes[5].value:  
-              return 'finished'    
+            case assigneeTypes[4].value:  
+              return 'finished'
         }
     }
 
@@ -150,14 +138,13 @@ export  function ProcessTable({ processes }: IProcess) {
 
 
     
-    //console.log(processes)
-    //console.log(promusNumber)
-   
+   //melhorar if statement only numbers
     function filterBySearchNumber(number) {
-    
       if(number == ""){
         setPromusNumber(processes)
-      }else {
+        
+      }  
+      else {
         setPromusNumber (processes.filter(process => process.processNumber.toString().startsWith(number))) 
       }
       }
@@ -179,7 +166,7 @@ export  function ProcessTable({ processes }: IProcess) {
               
             </Modal>
                     
-          <hr />
+          <hr className={styles.line}/>
         
             <div className={styles.processPerTypeContainer}>
               {assigneeTypes.map(({ name, value }) => {
