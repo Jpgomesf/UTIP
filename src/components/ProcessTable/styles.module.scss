@@ -145,19 +145,26 @@
   
   position: absolute;
   top: 8rem;
-  left: 70%;
+  left: 69%;
 
 
  
-  background: #eee;
+  background: #eef;
   margin-top: 1px;
   padding:4px;
   border-radius:5px ;
   right: 2rem;
   
-  border:0 none;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
+  border: 0 none;
   width:  16.8rem;
   font-size: 17px;  
+}
+
+.searchBox:hover {
+  border: 0 none;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.3);
+  background: rgb(255, 255, 255);
 }
 
 .line {
