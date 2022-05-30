@@ -1,42 +1,34 @@
 import React from "react"
-
-const OVERLAY_STYLES = {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    zIndex: 1000
-}
-
-const MODAL_STYLES = {
-    position: 'fixed',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    background: '#FFF',
-    padding: '50px',
-    zIndex: 1000,
-    width: '600px',
-    maxWidth: '100%',
-    height: '700px',
-    maxHeight: '100%',
-    
-}
-
+import ReactDOM  from "react-dom"
+import styles from './styles.module.scss'
 
 
 function Modal ({open, children, onClose}) {
     if(!open) return null
-    return (
+    return ReactDOM.createPortal(
         <>
-            <div style={OVERLAY_STYLES} />
-            <div style={MODAL_STYLES}>
-                <button onClick={onClose}>close modal</button>            
-                <div> Modal </div>           
+            <div className={styles.overlay} />
+            <div className={styles.modal}>
+                <button onClick={onClose} className={styles.close}></button>            
+                <h1 className={styles.h1}>Process Number</h1>
+                <hr />
+                <h2 className={styles.status}>Process Status</h2>
+                <h3 className={styles.type}>Process type</h3>
+                <p className={styles.crucial}>Crucial information: Lorem, ipsum dolor sit amet consectetur adipisicing 
+                    elit. Asperiores quidem sit quae, sequi velit delectus officia. 
+                    Eveniet consequuntur illum labore enim harum nihil delectus expedita accusantium,
+                    ad repudiandae vero ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sunt nostrum! Cum nemo tempore expedita? Fugiat, reiciendis voluptas. 
+                    Pariatur molestiae delectus nisi accusantium odit mollitia ea voluptatum, nulla est accusamus.
+                    Asperiores quidem sit quae, sequi velit delectus officia. 
+                    Eveniet consequuntur illum labore enim harum nihil delectus expedita accusantium,
+                    ad repudiandae vero ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sunt nostrum! Cum nemo tempore expedita? Fugiat, reiciendis voluptas. 
+                    Pariatur molestiae delectus nisi accusantium odit mollitia ea voluptatum, nulla est accusamus.
+                    Asperiores quidem sit quae, sequi velit delectus officia. 
+                </p>
+                <a className={styles.moreInfo} href="#"> Mais informações </a>           
             </div>
-        </>
+        </>,
+        document.getElementById('portal')
     )
 }
 export default Modal;
