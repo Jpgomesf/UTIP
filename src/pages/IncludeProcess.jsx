@@ -19,7 +19,25 @@ const IncludeProcess = () => {
                 <div className="mt-4 grid grid-cols-2 ">
                  <div className="mt-4 ml-6">
 
-                     <label className="block" htmlFor="text">Texto Processo</label>
+                     <label className="block" htmlFor="text">Número do Processo</label>
+                        <input id="number-process"
+                                  name="number-process"
+                                  type="number" placeholder="Digite o número do processo"  
+                                  autoComplete="number"
+                                  required
+                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+                </div>
+                <div className="mt-4 ml-6">
+                     <label className="block" htmlFor="text">Dia da Prisão</label>
+                        <input id="date-prision"
+                                  name="date"
+                                  type="date"
+                                  autoComplete="date"
+                                  required   
+                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+                </div>
+                <div className="mt-4 ml-6">
+                     <label className="block" htmlFor="text">PCNET</label>
                         <input id="text-process"
                                   name="text"
                                   type="text"
@@ -28,7 +46,7 @@ const IncludeProcess = () => {
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
+                     <label className="block" htmlFor="text">REDS</label>
                         <input id="text-process"
                                   name="text"
                                   type="text"
@@ -37,107 +55,89 @@ const IncludeProcess = () => {
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
+                     <label className="block" htmlFor="text">Tipo Penal</label>
+                        <input id="type-process"
+                                  name="tipo-process"
                                   type="text"
                                   autoComplete="text"
                                   required
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
+                     <label className="block" htmlFor="text">Nome do Acusado</label>
+                        <input id="name-accused"
+                                  name="nome-acusado"
+                                  type="name"
+                                  autoComplete="name"
+                                  required
+                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+                </div>                
+                <div className="mt-4 ml-6">
+                     <label className="block" htmlFor="text">Filiação</label>
+                        <input id="parents-accused"
+                                  name="filiação-acusado"
+                                  type="name" placeholder="Digite a filiação do acusado"
+                                  autoComplete="text"
+                                  required
+                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+                </div>
+                <div className="mt-4 ml-6">
+                     <label className="block" htmlFor="text">Data de Nascimento</label>
+                        <input id="born-accused"
+                                  name="nascimento-acusado"
+                                  type="date"
+                                  autoComplete="date"
+                                  required
+                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+                </div>
+                <div className="mt-4 ml-6">
+                     <label className="block" htmlFor="text">Naturalidade</label>
+                        <input id="City-accused"
+                                  name="naturalidade-acusado"
                                   type="text"
                                   autoComplete="text"
                                   required
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
+                     <label className="block" htmlFor="text">Endereço</label>
+                        <input id="address-address"
+                                  name="endereço-acusado"
                                   type="text"
                                   autoComplete="text"
                                   required
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
+                     <label className="block" htmlFor="text">Telefone</label>
+                        <input id="phone-accused"
+                                  name="telefone-acusado"
+                                  type="number"
+                                  autoComplete="number"
                                   required
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
+                     <label className="block" htmlFor="name">Advogado</label>
+                        <input id="lawyer"
+                                  name="advogado"
+                                  type="name"
+                                  autoComplete="name"
                                   required
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
+                     <label className="block" htmlFor="text">Número da OAB</label>
+                        <input id="oab-number"
+                                  name="numero-oab"
+                                  type="number"
+                                  autoComplete="number"
                                   required
                                   className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
                 <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
-                                  required
-                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
-                </div>
-                <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
-                                  required
-                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
-                </div>
-                <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
-                                  required
-                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
-                </div>
-                <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
-                                  required
-                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
-                </div>
-                <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
-                                  name="text"
-                                  type="text"
-                                  autoComplete="text"
-                                  required
-                                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
-                </div>
-                <div className="mt-4 ml-6">
-                     <label className="block" htmlFor="text">Texto Processo</label>
-                        <input id="text-process"
+                     <label className="block" htmlFor="text">Defensoria Pública</label>
+                        <input id="df"
                                   name="text"
                                   type="text"
                                   autoComplete="text"
@@ -200,5 +200,6 @@ const IncludeProcess = () => {
       </>  
     )
 }
+
 
 export default IncludeProcess;
