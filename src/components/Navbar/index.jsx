@@ -8,9 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 const navigation = [
-  { name: 'Inicio', href: '/dashboard', current: false },
-  { name: 'Processos', href: '#', current: false },
-  { name: 'Incluir Processo', href: '/includeprocess', current: false },
+  { name: 'Dashboard', href: '/dashboard', current: false },
 ]
 
 
@@ -110,7 +108,7 @@ const Navbar = () => {
                             onClick={ userProfile }
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Your Profile
+                            Perfil
                           </a>
                         )}
                       </Menu.Item>
@@ -121,7 +119,7 @@ const Navbar = () => {
                             onClick={ logout }
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Logout
+                            Sair
                           </a>
                         )}
                       </Menu.Item>

@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Process } from "../../model/Process";
-import Modal from "../Modal/modal";
-import   styles  from './styles.module.scss';
+import { Process } from "../../../model/Process";
+import Modal from "../../Modal/modal";
+import styles  from './styles.module.scss';
 
 interface IProcess {
     processes: Process[];
@@ -12,7 +12,7 @@ type AssignessTypes = {
     [key: string]: string;
 }
 
-export  function ProcessTable({ processes }: IProcess) {
+export function ProcessTable({ processes }: IProcess) {
     const assigneeTypes: AssignessTypes[] = [
         {
             name: 'Flagrante / Inquérito',

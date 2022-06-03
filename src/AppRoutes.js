@@ -3,11 +3,12 @@ import { useState, useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import LogIn from './pages/LogIn';
-import Home from './pages/Home/Home.tsx';
+import Home from './pages/Home/Home';
 import Oops from './pages/Oops';
 import Signup from './pages/Signup';
 import EditProfile from './pages/Editprofile';
 import IncludeProcess from './pages/IncludeProcess';
+import Processo from './pages/Processo/Processo.tsx';
 
 import { AuthProvider, AuthContext } from './context/auth';
 
@@ -31,6 +32,7 @@ const AppRoutes = () => {
                     <Route path="/dashboard" element={<Private><Home /></Private>} />
                     <Route path="/editprofile" element={<EditProfile />} />
                     <Route path="/includeprocess" element={<IncludeProcess />} />
+                    <Route path="/processo" element={<Processo />} />
                     <Route path="*" element={<Navigate to={"/login"}><Oops /></Navigate>} />      
                 </Routes>
             </AuthProvider>

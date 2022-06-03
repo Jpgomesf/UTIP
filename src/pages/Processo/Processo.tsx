@@ -1,29 +1,29 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { ProcessTable } from '../../components/ProcessTable/index.tsx';
+import { ProcessTable } from '../../components/Processos/ProcessTable/index.tsx';
 import Navbar from '../../components/Navbar'
 import { Process } from '../../model/Process';
-import processess from '../../repositories/processList.json';
-import styles from './styles.module.scss';
+import dadosProcesso from '../../data/json/processList.json';
+import styles from '../../components/Processos/ProcessTable/styles.module.scss';
 
-function Home ()  {
+function Processo ()  {
   const [processes, setProcesses] = useState<Process[]>([]);
   useEffect(() => {
-    setProcesses(processess);
+    setProcesses(dadosProcesso);
   }, []);
 
   return (
     <>
 
-      <main className={styles.pageContainer}>
+      <main>
         <Navbar />
         <div className={styles.contentContainer}>
             <ProcessTable processes={processes} />
-          </div>
+        </div>
         
       </main>
     </>
   )
 }
 
-export default Home;
+export default Processo;
