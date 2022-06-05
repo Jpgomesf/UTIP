@@ -111,8 +111,6 @@ const IncludeProcess = () => {
                            className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" />
                      </div>
                   </div>
-                  
-                  <h3 className="mt-4 text-2xl font-bold text-left"> Informações do Acusado: </h3>
                   <div className="mt-4 grid grid-cols-2 ">                     
                      <div className="mt-4 ml-6">
                         <label className="block" htmlFor="text">Nome do Acusado</label>

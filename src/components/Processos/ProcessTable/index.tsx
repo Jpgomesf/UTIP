@@ -162,6 +162,12 @@ export function ProcessTable({ processes }: IProcess) {
             </div>
           </header>
         </section>
+        <input className={styles.searchBox}
+          type="text" 
+          placeholder="Search"
+          onChange={event => {setSearchNumber(event.target.value)
+          }}
+        />              
         
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
 
@@ -182,15 +188,6 @@ export function ProcessTable({ processes }: IProcess) {
         </div>
 
 
-            {/*<h1 className={styles.law}>Lei de Tóxicos 11.343/06</h1> */}
-               
-              {/* <input className={styles.searchBox}
-              type="text" 
-              placeholder="Search"
-              onChange={event => {setSearchNumber(event.target.value)
-              }}
-              /> */}             
-
-        </> 
+        </>
       );
 }
