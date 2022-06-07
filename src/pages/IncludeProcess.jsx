@@ -39,24 +39,6 @@ const IncludeProcess = () => {
                            className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" />
                      </div>
                      <div className="mt-4 ml-6">
-                        <label className="block" htmlFor="text">PCNET</label>
-                        <input id="text-process"
-                           name="text"
-                           type="text"
-                           autoComplete="text"
-                           required
-                           className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" />
-                     </div>
-                     <div className="mt-4 ml-6">
-                        <label className="block" htmlFor="text">REDS</label>
-                        <input id="text-process"
-                           name="text"
-                           type="text"
-                           autoComplete="text"
-                           required
-                           className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" />
-                     </div>
-                     <div className="mt-4 ml-6">
                         <label className="block" htmlFor="text">Tipo Penal</label>
                         <input id="type-process"
                            name="tipo-process"
