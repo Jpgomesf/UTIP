@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM  from "react-dom"
 import styles from './styles.module.scss'
+import { Link } from "react-router-dom";
 
 
 function Modal ({open, children, onClose}) {
@@ -25,7 +26,7 @@ function Modal ({open, children, onClose}) {
                     Pariatur molestiae delectus nisi accusantium odit mollitia ea voluptatum, nulla est accusamus.
                     Asperiores quidem sit quae, sequi velit delectus officia. 
                 </p>
-                <a className={styles.moreInfo} href="#"> Mais informações </a>           
+                <Link to="/infoprocesso" className={styles.moreInfo} target="_blank"> Mais informações </Link>           
             </div>
         </>,
         document.getElementById('portal')

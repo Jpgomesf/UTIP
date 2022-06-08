@@ -11,6 +11,7 @@ import IncludeProcess from './pages/IncludeProcess';
 import Processo from './pages/Processo/Processo.tsx';
 
 import { AuthProvider, AuthContext } from './context/auth';
+import InfoProcesso from './components/Processos/InfoProcesso/InfoProcesso';
 
 const AppRoutes = () => {
    const Private = ({children}) => {
@@ -33,6 +34,7 @@ const AppRoutes = () => {
                     <Route path="/editprofile" element={<EditProfile />} />
                     <Route path="/includeprocess" element={<IncludeProcess />} />
                     <Route path="/processo" element={<Processo />} />
+                    <Route path="/infoprocesso" element={<InfoProcesso />} />
                     <Route path="*" element={<Navigate to={"/login"}><Oops /></Navigate>} />      
                 </Routes>
             </AuthProvider>
