@@ -154,23 +154,28 @@ export function ProcessTable({ processes }: IProcess) {
         <section className='md:container md:mx-auto px-8'>
           <header className="bg-white">
             <div className="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-1">
-            <section className="lg:flex lg:items-center lg:justify-between">
-              <div className="flex-1 min-w-0">
-                <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">Lei de Tóxicos 11.343/06</h2>
-              </div>
-            </section>
+              <section className="lg:flex lg:items-center lg:justify-between">
+                <div className="flex-1 min-w-0">
+                  <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">Lei de Tóxicos 11.343/06</h2>
+                </div>
+                
+                <span className="sm:ml-3">
+                  <form action="" className="relative">
+                    <input type="search" 
+                    className="peer cursor-pointer relative z-10 h-10 w-10 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-zinc-600 focus:pl-16 focus:pr-4" placeholder="Pesquisar processo" 
+                    onChange={event => {setSearchNumber(event.target.value)
+                  }} />
+                  <svg xmlns="http://www.w3.org/2000/svg" className="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-zinc-600 px-3.5 peer-focus:border-zinc-300 peer-focus:zinc-indigo-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  </form>
+                </span>
+              </section>
             </div>
           </header>
         </section>
-        <input className={styles.searchBox}
-          type="text" 
-          placeholder="Search"
-          onChange={event => {setSearchNumber(event.target.value)
-          }}
-        />              
-        
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
 
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         </Modal>
         
         <hr className={styles.line}/>
@@ -186,8 +191,6 @@ export function ProcessTable({ processes }: IProcess) {
             );
             })}
         </div>
-
-
         </>
       );
 }
