@@ -57,42 +57,42 @@ const InfoProcesso = () => {
                   
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Endereço</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">Rua Jose Marcondes da Fonseca, 161, Casa 10, Santa Maria, Poços de Caldas - MG, CEP 37701293</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
                   
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Nome da(o) parente</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">Lucimara de Paula Magalhaes</dd>
+                    <dd className=" mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 ">*********</dd>
                   </div>
 
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Tipo de parentesco</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">Mãe</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
 
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Telefone da(o) parente</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">N/A</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
 
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Defensor(a) da pessoa acusada</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">N/A</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
 
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Defensoria pública</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">N/A</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
 
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">E-mail - Defensor(a)</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">N/A</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
 
                   <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Número da OAB</dt>
-                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">N/A</dd>
+                    <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">*********</dd>
                   </div>
                 </dl>
               </div>
