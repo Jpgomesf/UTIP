@@ -17,7 +17,7 @@ function Modal ({open, children, onClose}) {
                 <section className="lg:flex lg:items-center lg:justify-between">
                     <div className="flex-1 min-w-0">
                         <h1 className="mt-1 max-w-2xl text-xl text-gray-500">Número do processo</h1>
-                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">1234567.00.2023.1.23.4567</h2>
+                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">0010616_292022.8.13.0518</h2>
                     </div>
                 </section>
 
