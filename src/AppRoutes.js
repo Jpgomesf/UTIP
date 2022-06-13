@@ -30,10 +30,10 @@ const AppRoutes = () => {
                 <Routes>
                     <Route path="/login" element={<LogIn />} />
                     <Route path="/signup" element={<Signup />} />
-                    <Route path="/dashboard" element={<Private><Home /></Private>} />
+                    <Route path="/home" element={<Private><Home /></Private>} />
                     <Route path="/editprofile" element={<EditProfile />} />
                     <Route path="/includeprocess" element={<IncludeProcess />} />
-                    <Route path="/processo" element={<Processo />} />
+                    <Route path="/dashboard" element={<Processo />} />
                     <Route path="/infoprocesso" element={<InfoProcesso />} />
                     <Route path="*" element={<Navigate to={"/login"}><Oops /></Navigate>} />      
                 </Routes>

@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 const navigation = [
-  { name: 'Home', href: '/dashboard', current: false },
+  { name: 'Home', href: '/home', current: false },
 ]
 
 
