@@ -97,6 +97,7 @@
   
   .ok,
   .critical,
+  .warning,
   .finished {
     color: white;
   }
@@ -106,7 +107,7 @@
   }
   
   .warning {
-    background-color: rgb(252, 197, 46);
+    background-color: rgb(255, 115, 1);
   }
   
   .critical {
