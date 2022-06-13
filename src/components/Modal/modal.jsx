@@ -25,8 +25,8 @@ function Modal ({open, children, onClose}) {
 
                 <section className="lg:flex lg:items-center lg:justify-between">
                     <div className="flex-1 min-w-0">
-                        <h1 className="mt-1 max-w-2xl text-xl text-gray-500">Status do processo</h1>
-                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-2xl sm:truncate">Em andamento</h2>
+                        <h1 className="mt-1 max-w-2xl text-xl text-gray-500">Fase do processo</h1>
+                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-2xl sm:truncate">Denúncia</h2>
                     </div>
                     
                     <div className="flex-1 min-w-0">
@@ -58,7 +58,7 @@ function Modal ({open, children, onClose}) {
                             m-0
                             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                         "
-                        rows="3"
+                        rows="5"
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante ante, luctus vel tempor et, mollis quis nunc. Aliquam nunc leo, lacinia eget nulla non, faucibus laoreet ex. Morbi ac odio euismod mi consectetur tempor. Maecenas dignissim fringilla sapien viverra rhoncus. Pellentesque lobortis velit ac massa finibus, nec rhoncus sapien laoreet." disabled
                         ></textarea>
                     </div>  
