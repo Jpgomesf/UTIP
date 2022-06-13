@@ -33,7 +33,7 @@ export const AuthProvider = ({children}) => {
         if (password === "admin123" ) {
             
             setUser(loggedUser);
-            navigate("/dashboard"); 
+            navigate("/home"); 
         }
         
     };
