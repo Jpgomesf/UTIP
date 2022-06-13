@@ -26,12 +26,12 @@ function Modal ({open, children, onClose}) {
                 <section className="lg:flex lg:items-center lg:justify-between">
                     <div className="flex-1 min-w-0">
                         <h1 className="mt-1 max-w-2xl text-xl text-gray-500">Status do processo</h1>
-                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">Em andamento</h2>
+                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-2xl sm:truncate">Em andamento</h2>
                     </div>
                     
                     <div className="flex-1 min-w-0">
                         <h1 className="mt-1 max-w-2xl text-xl text-gray-500">Tipo penal</h1>
-                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">Tipicidade Imediata</h2>
+                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-2xl sm:truncate">Tipicidade Imediata</h2>
                     </div>    
                 </section>
 
