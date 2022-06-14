@@ -178,8 +178,8 @@ const IncludeProcess = () => {
                      
                   </div>
                   <div className="flex items-center justify-end ml-6">
-                     <Link to="/dashboard"><button href="/dashboard" className="px-6 py-2 mt-4 mx-4 text-white bg-gray-500 rounded-lg hover:bg-gray-400">Cancelar</button></Link>
-                     <button href="/dashboard" className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Salvar</button>
+                     <Link to="/home"><button href="/home" className="px-6 py-2 mt-4 mx-4 text-white bg-gray-500 rounded-lg hover:bg-gray-400">Cancelar</button></Link>
+                     <button href="/home" className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Salvar</button>
                   </div>
                </form>
             </div>
