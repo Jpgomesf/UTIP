@@ -70,13 +70,13 @@ export default function LogIn() {
                                         className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                         </div>
                         <div className="mt-4 ml-6">
-                            <label className="block" Htmlfor="email">Password</label>
+                            <label className="block" Htmlfor="email">Senha</label>
                             <input id="password"
                                         name="password"
                                         type="password"
                                         autoComplete="current-password"
                                         required 
-                                        placeholder="Password"
+                                        placeholder="Senha"
                                         className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                         </div>
                         <div className="mt-4 ml-6">
@@ -88,12 +88,12 @@ export default function LogIn() {
                                         className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                         </div>
                         <div className="mt-4 ml-6">
-                            <label className="block">Confirm Password</label>
+                            <label className="block">Confirme a Senha</label>
                                     <input id="password"
                                         name="password"
                                         type="password"
                                         required 
-                                        placeholder="Confirm password"
+                                        placeholder="Confirme a Senha"
                                         className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                         </div>
                         <div className="flex items-center ml-6">

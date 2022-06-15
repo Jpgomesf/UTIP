@@ -36,7 +36,7 @@ const LogIn = () => {
                                         className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                         </div>
                         <div className="mt-4">
-                            <label className="block" htmlFor="password">Password</label>
+                            <label className="block" htmlFor="password">Senha</label>
                                     <input 
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
